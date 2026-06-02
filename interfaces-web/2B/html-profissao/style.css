@@ -1,0 +1,191 @@
+/* CONFIGURAÇÃO GLOBAL DE CORES */
+:root {
+    --azul-escuro: #0f172a;
+    --azul-medio: #1e293b;
+    --azul-tecnologico: #0284c7;
+    --azul-claro: #38bdf8;
+    --laranja-alerta: #f59e0b;
+    --fundo-site: #f8fafc;
+    --texto-principal: #334155;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--fundo-site);
+    color: var(--texto-principal);
+    line-height: 1.6;
+}
+
+/* CABEÇALHO E MENU DO SITE */
+header {
+    background-color: var(--azul-escuro);
+    padding: 20px 10px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+header h1 span {
+    color: var(--azul-claro);
+}
+
+.navegacao {
+    list-style: none;
+    padding: 0;
+}
+
+.navegacao li {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.navegacao a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.navegacao a:hover, .navegacao a.ativo {
+    color: var(--azul-claro);
+}
+
+/* ÁREA DO CONTEÚDO PRINCIPAL */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+/* BANNER DE BOAS-VINDAS (PÁGINA HOME) */
+.bloco-destaque {
+    background-color: var(--azul-medio);
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.bloco-destaque h2 {
+    color: #ffffff;
+    font-size: 26px;
+    margin-bottom: 10px;
+    border: none;
+    padding: 0;
+}
+
+.bloco-destaque p {
+    color: #cbd5e1;
+}
+
+/* TÍTULOS DO SITE */
+h2 {
+    color: var(--azul-escuro);
+    font-size: 22px;
+    border-left: 5px solid var(--azul-tecnologico);
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* BLOCOS DE INFORMAÇÃO (ESTILO CARDS) */
+.container-cards {
+    margin: 20px 0;
+}
+
+.bloco-info {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.bloco-info h3 {
+    color: var(--azul-escuro);
+    margin-bottom: 10px;
+}
+
+/* GRÁFICO AUTOMÁTICO DE SALÁRIOS */
+.painel-grafico {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-top: 25px;
+}
+
+.linha-grafico {
+    margin-bottom: 15px;
+}
+
+.linha-grafico label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.barra-fundo {
+    background-color: #e2e8f0;
+    height: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.barra-interna {
+    height: 100%;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: right;
+    line-height: 30px;
+    padding-right: 15px;
+}
+
+/* CONFIGURAÇÃO DA IMAGEM */
+.imagem-responsiva {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* LISTAS */
+ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* RODAPÉ DO SITE */
+footer {
+    background-color: var(--azul-escuro);
+    color: #64748b;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 14px;
+}
