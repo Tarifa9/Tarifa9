@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História do CSS</title>
+    <style>
+        /* Estilização Centralizada */
+        :root {
+            --bg: #f8f9fa;
+            --primaria: #264de4; /* Cor oficial do CSS3 */
+            --texto: #2d3436;
+            --branco: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--texto);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: var(--primaria);
+            color: var(--branco);
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Conteúdo Principal */
+        .conteudo {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--branco);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primaria);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* Grid de Destaques */
+        .recursos {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            flex: 1;
+            min-width: 200px;
+            background: #eef2ff;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid #d1d9ff;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #636e72;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>A Evolução do CSS</h1>
+        <p>O CSS (Cascading Style Sheets) é uma linguagem fundamental para o desenvolvimento web,
+             responsável por definir a aparência e o estilo das páginas na internet. Com ele, é possível
+             controlar cores, fontes, espaçamentos, layouts e até animações, tornando os sites mais
+            atrativos e organizados. Ao longo do tempo, o CSS evoluiu significativamente, acompanhando
+            o crescimento da tecnologia e das necessidades dos usuários. Essa evolução permitiu a
+            criação de interfaces cada vez mais modernas, responsivas e eficientes, melhorando a
+             experiência de navegação em diferentes dispositivos.</p>
+    </header>
+
+    <div class="conteudo">
+        <section>
+            <h2>A Origem</h2>
+            <p>
+                O CSS (Cascading Style Sheets) foi proposto em 1994 por Håkon Wium Lie. Antes dele, o design 
+                da web era limitado e o código HTML ficava "sujo" com tags de formatação. O CSS veio para 
+                separar o conteúdo da apresentação, permitindo que um único arquivo de estilo controle 
+                centenas de páginas simultaneamente.
+            </p>
+        </section>
+
+        <section>
+            <h2>A Modernidade</h2>
+            <p>
+                Com a chegada do CSS3, a web ganhou vida com animações, sombras e layouts complexos como 
+                Grid e Flexbox. Hoje, o CSS é uma ferramenta poderosa que permite criar interfaces 
+                extremamente rápidas e adaptáveis a qualquer tamanho de tela (Design Responsivo).
+            </p>
+            <h2>O que é CSS </h2>
+            <p>
+                O CSS é a linguagem que cuida da aparência de um site. Imagine o HTML como o esqueleto (a estrutura) e o CSS como a pele, as roupas e a maquiagem (o visual).<br>
+                ​Ele funciona através de regras simples baseadas em três partes:<br>
+​                Seletor: Define quem você vai estilizar (ex: um título, um parágrafo ou um botão).<br>
+​                Propriedade: Define o que você vai mudar (ex: a cor, o tamanho da letra ou a largura).<br>
+​                Valor: Define como será essa mudança (ex: azul, 20px ou 100%).<br>
+                ​Em resumo: o CSS serve para separar o conteúdo da apresentação, permitindo que você mude o design de um site inteiro apenas alterando algumas linhas de código,
+                deixando a página organizada, bonita e fácil de usar em qualquer tela.
+            </p>
+        </section>
+        <selection>
+            <h2>Informações do projeto</h2>
+            <p>Aula: Interfaces Web<br>
+               Alunos: Lucas Rodrigues Tarifa<br>
+               Nicolas Domeneghetti Bertazzoni<br>
+               Professores: Cristiane e Ronildo
+               </p>
+        </selection>
+
+</body>
+</html>
