@@ -1,0 +1,32 @@
+* Instituição: EtecVAV - Vasco Antonio Vechiarutti
+*
+* Arquivo: salário
+* Data: 09/04/2026
+* Autor: Nicolas Domeneghetti Bertazzoni e Lucas Rodrigues Tarifa
+* Descrição: O vendedor recebe seu salário fixo acrescido de comissões de vendas, calculado a partir do percentual do valor de suas vendas.
+* Ler o salário fixo do vendedor, o valor de suas vendas e o percentual sobre as vendas.
+* Calcular e exibir o salário final do vendedor.
+*/
+
+programa {
+  funcao inicio() {
+    real salarioFixo, valorVendas, percentual, comissao, salarioFinal
+
+    escreva("digite o valor final das vendas: R$ ")
+    leia(salarioFixo)
+    escreva("digite o valor total das vendas: R$ ")
+    leia(valorVendas)
+    escreva("digite o valor percentual de comissão (exemplo: 10 para 10%): ")
+    leia(percentual)
+
+    comissao = valorVendas * (percentual / 100)
+    salarioFinal = salarioFixo + comissao
+
+    escreva("\n--- Folha de Pagamento ---")
+		escreva("\nSalário Fixo: R$ ", salarioFixo)
+		escreva("\nTotal de Vendas: R$ ", valorVendas)
+		escreva("\nComissão (", percentual, "%): R$ ", comissao)
+		escreva("\nSalário Final a receber: R$ ", salarioFinal)
+    
+  }
+}
