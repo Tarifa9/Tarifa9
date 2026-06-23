@@ -1,0 +1,40 @@
+/*
+* Instituição: EtecVAV - Vasco Antonio Vechiarutti
+*
+* Arquivo: Cálculo de Estacionamento
+* Data: 17/04/2026
+* Autor: Nicolas Domeneghetti Bertazzoni e Lucas Rodrigues Tarifa
+* Descrição: Ler o tempo de permanência de um veículo em um estacionamento
+* e calcular o valor a pagar , considerando:
+*
+* Até 2 horas → R$ 2,00 por hora
+*
+* Após 2 horas →
+*
+* As 2 primeiras começam custando R$ 2,00 cada
+* As horas adicionais custam R$ 1,00 por hora
+*/
+
+programa {
+  funcao inicio() {
+
+  real tempo, preço
+
+	escreva("Digite o tempo de permanência (em horas): ")
+	leia(tempo)
+
+	se (tempo <= 2)
+	{
+	preço = tempo * 2.0
+	}
+	senao
+	{
+	preço = (2 * 2.0) + ((tempo - 2) * 1.0)
+	}
+
+	escreva("\n--- Recibo de Estacionamento ---")
+	escreva("\nTempo de permanência: ", tempo, " horas")
+	escreva("\nValor total a pagar: R$ ", preço)
+
+  }
+}

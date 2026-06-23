@@ -1,0 +1,43 @@
+/*
+* Instituição: EtecVAV - Vasco Antonio Vechiarutti
+*
+* Arquivo: Classificação Indicativa de Filme
+* Data: 17/04/2026
+* Autor: Nicolas Domeneghetti Bertazzoni e Lucas Rodrigues Tarifa
+* Descrição: Leia a classificação indicativa de um filme e identifique sua categoria,
+* de acordo com as seguintes faixas:
+*
+* Até 10 anos → Infantil
+* De 11 a 14 anos → Infantojuvenil
+* De 15 a 17 anos → Juvenil
+* Acima de 17 anos → Adulto
+*
+* O programa deve exibir a categoria correspondente.
+
+
+*/
+
+programa {
+  funcao inicio() {
+
+  inteiro classificação
+
+	escreva("Digite a classificação indicativa do filme (idade): ")
+	leia(classificação)
+
+	se (classificação <= 10)
+	{
+	escreva("Categoria: Infantil")
+	}
+	senao se (classificação <= 14)
+	{
+	escreva("Categoria: Infantojuvenil")
+	}
+	senao se (classificação <= 17)
+	{
+	escreva("Categoria: Juvenil")
+	}
+	senao
+	{
+	escreva("Categoria: Adulto")
+	}

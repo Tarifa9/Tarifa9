@@ -1,0 +1,38 @@
+/*
+* Instituição: EtecVAV - Vasco Antonio Vechiarutti
+*
+* Arquivo: Classificação de Tarifa por Idade
+* Data: 17/04/2026
+* Autor: Nicolas Domeneghetti Bertazzoni e Lucas Rodrigues Tarifa
+* Descrição: Ler a idade do passageiro e determinar o tipo de tarifa:
+*
+* 2 anos → Gratuita
+* De 3 a 12 anos → Meia tarifa
+* Acima de 12 anos → Tarifa completa
+*
+* O programa deverá prever o tipo de tarifa correspondente.
+*/
+
+programa {
+  funcao inicio() {
+
+  inteiro idade
+
+	escreva("Digite a idade do passageiro: ")
+	leia(idade)
+
+	se (idade <= 2)
+	{
+	escreva("Tarifa: Gratuita")
+	}
+	senao se (idade <= 12)
+	{
+	escreva("Tarifa: Meia tarifa")
+	}
+	senao
+	{
+	escreva("Tarifa: Tarifa completa")
+	}
+
+  }
+}

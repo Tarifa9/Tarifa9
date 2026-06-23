@@ -1,0 +1,33 @@
+/*
+* Instituição: EtecVAV - Vasco Antonio Vechiarutti
+*
+* Arquivo: Quadrado Perfeito
+* Data: 17/04/2026
+* Autor: Nicolas Domeneghetti Bertazzoni e Lucas Rodrigues Tarifa
+* Descrição: Ler um número e verificar se ele é um quadrado perfeito .
+*/
+
+programa {inclua biblioteca Matematica --> mat
+  funcao inicio() {
+
+	real numero, raiz
+	inteiro raiz_inteira
+
+	escreva("Digite um número: ")
+	leia(numero)
+	
+	raiz = mat.raiz(numero, 2.0)
+	
+	raiz_inteira = raiz 
+
+	se (raiz_inteira * raiz_inteira == numero)
+	{
+	escreva("O número ", numero, " é um quadrado perfeito (raiz: ", raiz_inteira, ")")
+	}
+	senao
+  {
+	escreva("O número ", numero, " NÃO é um quadrado perfeito.")
+  }
+
+  }
+}

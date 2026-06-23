@@ -1,0 +1,31 @@
+/*
+* Instituição: EtecVAV - Vasco Antonio Vechiarutti
+*
+* Arquivo: Verifique Vogal
+* Data: 17/04/2026
+* Autor: Nicolas Domeneghetti Bertazzoni e Lucas Rodrigues Tarifa
+* Descrição: Leia um caractere e verifique se ele é uma vogal.
+* Exibir o caractere informado e indicar se é ou não uma vogal.
+*/
+
+programa {
+  funcao inicio() {
+
+  caracter letra
+
+	escreva("Digite uma letra: ")
+	leia(letra)
+
+	
+	se (letra == 'a' ou letra == 'e' ou letra == 'i' ou letra == 'o' ou letra == 'u' ou
+		    letra == 'A' ou letra == 'E' ou letra == 'I' ou letra == 'O' ou letra == 'U')
+	{
+	escreva("A letra '", letra, "' é uma vogal.")
+	}
+	senao
+	{
+	escreva("A letra '", letra, "' não é uma vogal (é uma consoante ou símbolo).")
+  }
+
+  }
+}

@@ -1,0 +1,28 @@
+/*
+* Instituição: EtecVAV - Vasco Antonio Vechiarutti
+*
+* Arquivo: Ano bissexto
+* Data: 17/04/2026
+* Autor: Nicolas Domeneghetti Bertazzoni e Lucas Rodrigues Tarifa
+* Descrição: Ler um ano e verificar se ele é bissexto .
+*/
+
+programa {
+  funcao inicio() {
+
+	
+		inteiro ano
+
+		escreva("Digite um ano: ")
+		leia(ano)
+
+		se ((ano % 4 == 0 e ano % 100 != 0) ou (ano % 400 == 0))
+		
+		escreva("O ano ", ano, " é bissexto porque atende às regras de divisibilidade (4 ou 400).")
+		
+		senao
+
+		escreva("O ano ", ano, " não é bissexto porque não divide por 4 ou cai na regra dos 100 anos.")
+
+  }
+}

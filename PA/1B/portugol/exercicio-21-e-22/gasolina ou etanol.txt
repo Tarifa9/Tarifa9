@@ -1,0 +1,34 @@
+/*
+* Instituição: EtecVAV - Vasco Antonio Vechiarutti
+*
+* Arquivo: gasolina ou etanol
+* Data: 17/04/2026
+* Autor: Nicolas Domeneghetti Bertazzoni e Lucas Rodrigues Tarifa
+* Descrição: Ler o preço do etanol e da gasolina e indicar qual combustível é mais vantajoso.
+*/
+
+programa {
+  funcao inicio() {
+
+  real preco_etanol, preco_gasolina, limite
+
+	escreva("Preço do Etanol: R$ ")
+	leia(preco_etanol)
+	escreva("Preço da Gasolina: R$ ")
+	leia(preco_gasolina)
+
+	limite = preco_gasolina * 0.70
+
+	escreva("\nO limite para o etanol ser vantajoso é: R$ ", limite)
+
+	se (preco_etanol <= limite)
+		{
+	escreva("\nRecomendação: Abastecer com ETANOL")
+		}
+	senao
+		{
+	escreva("\nRecomendação: Abastecer com GASOLINA")
+    }
+    
+  }
+}
